@@ -1,0 +1,310 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+    background-color: #F3B1B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.envelope{
+    position: relative;
+    width: 400px;
+    height: 223px;
+    /* border: 1px solid; */
+    animation-name: envelopeAni;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.envelopeTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 1s;
+    transform: translateY(-10%) rotateX(180deg);
+    z-index: 1;
+}
+.envelopeBody{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+.back{
+    width: 400px;
+    height: 200px;
+    background-color: #B94445;
+    border-radius: 20px;
+}
+
+.letter {
+    width: 270px;
+    height: 150px;
+    background-color: aliceblue;
+    text-align: center;
+    position: absolute;
+    left: 16%;
+    transition: 0.5s;
+    bottom: 20px;
+    
+}
+
+.letterOpen {
+    transform: translateY(-100px);
+    bottom: -40px;
+    height: 250px;
+    transition: 1.5s;
+    z-index: 0;
+}
+
+.envelopeTopOpen {
+    transform: translateY(-90%) rotateX(0deg);
+    z-index: 0;
+    transition: 0.7s;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 10%;
+    animation-name: sahdowAni;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+
+.photo {
+    position: absolute;
+    left: -131.5%;
+    scale: 0.05;
+    transition: 0.5s;
+    top: -463px;
+    border: #F0659A solid 85px;
+}
+.photoOpen {
+    transform: translateY(-1950px);
+    scale: 0.2;
+    transition: 1.3s;
+    z-index: 0;
+}
+
+
+
+.heart1 {
+    position: absolute;
+    bottom: 250px;
+    left: 50px;
+    z-index: 45;
+    opacity: 0;   
+}
+.heart1_animation{
+    animation-name: heart1Ani;
+    left: 50px;
+    z-index: 45;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart1Ani {
+    0%{
+        top: -10px;
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5; 
+        
+    }
+    50%{
+        top: -120px;
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5; 
+    }
+    100%{
+        top: -150px;
+        opacity: 0;
+    }
+}
+
+
+.heart2 {
+    position: absolute;
+    bottom: 250px;
+    left: 0px;
+    z-index: 45;
+    opacity: 0; 
+    scale: 0.7;  
+}
+
+
+.heart3 {
+    position: absolute;
+    bottom: 250px;
+    left: 25px;
+    z-index: 45;
+    opacity: 0; 
+    scale: 0.5;  
+}
+.heart3_animation{
+    animation-name: heart3Ani;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart3Ani {
+    0%{
+        top: -5px;
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5; 
+        
+    }
+    50%{
+        top: -100px;
+        opacity: 1;
+    }
+    75%{
+        opacity: 0.5; 
+    }
+    100%{
+        top: -125px;
+        opacity: 0;
+    }
+}
+
+
+.heart4 {
+    position: absolute;
+    bottom: 250px;
+    left: -20px;
+    z-index: 45;
+    opacity: 0; 
+    scale: 0.5;  
+}
+.heart4_animation{
+    animation-name: heart4Ani;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart4Ani {
+    0%{
+        top: 5px;
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5; 
+        
+    }
+    50%{
+        top: -80px;
+        opacity: 1;
+        left: -30px;
+    }
+    75%{
+        opacity: 0.5; 
+    }
+    100%{
+        top: -110px;
+        opacity: 0;
+        left: -30px
+    }
+}
+
+
+.heart5 {
+    position: absolute;
+    bottom: 250px;
+    left: 320px;
+    z-index: 45;
+    opacity: 0;   
+}
+.heart6 {
+    position: absolute;
+    bottom: 250px;
+    left: 280px;
+    z-index: 45;
+    opacity: 0; 
+    scale: 0.5;  
+}
+.heart7 {
+    position: absolute;
+    bottom: 250px;
+    left: 360px;
+    z-index: 45;
+    opacity: 0;
+    scale: 0.8;   
+}
+.heart8 {
+    position: absolute;
+    bottom: 250px;
+    left: 360px;
+    z-index: 45;
+    opacity: 0;   
+    scale: 0.5;
+}
+.heart8_animation{
+    animation-name: heart8Ani;
+    animation-duration: 1.3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes heart8Ani {
+    0%{
+        top: 5px;
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.5; 
+        
+    }
+    50%{
+        top: -80px;
+        opacity: 1;
+        left: 380px;
+    }
+    75%{
+        opacity: 0.5; 
+    }
+    100%{
+        top: -110px;
+        opacity: 0;
+        left: 380px;
+}
+}
+
+
+
+
+@keyframes envelopeAni {
+    0%{
+        top: 100px;
+    }
+    50%{
+        top: 70px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+
+@keyframes sahdowAni {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
