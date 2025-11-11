@@ -1,30 +1,8 @@
-name: Lab CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: lab6   # ← вкажи свою папку
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run tests
-        run: npm test
+{
+  "name": "valentine-project",
+  "version": "1.0.0",
+  "description": "Lab CI tests",
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  }
+}
