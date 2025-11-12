@@ -1,8 +1,0 @@
-
-  "name": "valentine-project",
-  "version": "1.079708.0",
-  "descripion": "Lab CI tests",
-  "scripts": {
-    "test": "echo \"No tests yet\""
-  }
-}
